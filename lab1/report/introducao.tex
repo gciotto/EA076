@@ -1,0 +1,43 @@
+\section {Introdução}
+
+O principal propósito deste primeiro experimento foi explorar as ferramentas
+disponibilizadas pelo \textit{software} \textit{Code Warrior}, uma interface
+gráfica baseada na \textit{IDE Eclipse}, para o desenvolvimento de
+\textit{firmwares} compatíveis com microcontrolador \textit{Freescale KL25}.
+Sendo assim, utilizamos tal plataforma para configurar alguns pinos do
+microcontrolador como entrada ou saída, dependendo da montagem desejada. Foram
+realizadas, no total, três montagens distintas.
+
+\vspace{12pt}
+
+Na primeira, o objetivo foi construir um programa capaz de piscar o \textit{LED}
+vermelho, presente no \textit{kit}, em uma frequência de 1Hz. Para tal, foi
+necessário consultar os manuais do microcontrolador [\ref{bib:manual}] para
+entender como a comunicação entre ele e o diodo poderia ser realizada e como gerar interrupções
+em instantes periódicos de tempo. Em seguida, levando em conta que o
+\textit{kit} possui ainda outros dois \textit{LEDs}, extendemos o programa para piscar
+também o \textit{LED} verde, a uma frequência de 2Hz.
+
+\vspace{12pt}
+
+A segunda tarefa consistiu na introdução de um \textit{LED} externo, de
+modelo \textit{TLDR490} fabricado pela empresa \textit{Vishay} e cuja
+documentação é disponibilizada no site do curso [\ref{bib:led}]. Para
+realizá-la, foi preciso escolher um pino disponível do microcontrolador para funcionar como
+\textit{output} e calcular a resistência necessária para limitar a corrente a
+fim de não danificar nenhum dos dois componentes.
+
+\vspace{12pt}
+
+Enfim, a última tarefa envolveu o uso de um \textit{push-button} para fornecer
+ao usuário a possibilidade de controlar o funcionamento dos \textit{LEDs}. Para
+isso, tivemos de configurar um pino como entrada, assim como escolher
+uma resistência para limitar a corrente que passa pelo circuito. Essa
+resistência é chamada de \textit{pull} em referência à função que desempenha:
+pode induzir um estado padrão alto (\textit{pull up}) ou baixo (\textit{pull
+down}) na saída do circuito, que, nosso caso, é o pino que foi configurado como
+\textit{input}.
+
+\vspace{12pt}
+
+As próximas seções visam a análise dessas montagens.
