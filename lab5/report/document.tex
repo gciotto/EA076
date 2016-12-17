@@ -1,0 +1,82 @@
+\documentclass[12pt, a4paper]{article}
+%=========================== PACKAGES =============================%
+
+\usepackage[utf8]{inputenc}
+\DeclareUnicodeCharacter{00A0}{ }
+
+\usepackage[hmargin=1.5cm,vmargin=1.5cm]{geometry}
+\usepackage[brazil]{babel}
+
+\usepackage{longtable}
+
+\usepackage{graphicx}
+\usepackage{placeins}
+\usepackage{subcaption}
+\usepackage{float}
+
+\usepackage{hhline}
+\usepackage{courier}
+ 
+\usepackage{amsmath}
+\usepackage{bm}
+\usepackage{amsfonts}
+
+\usepackage{hyperref}
+
+\usepackage{listings}
+\renewcommand\lstlistingname{Programa}
+ 
+
+\usepackage{color} %red, green, blue, yellow, cyan, magenta, black, white
+\definecolor{mygreen}{RGB}{28,140,0} % color values Red, Green, Blue
+\definecolor{mylilas}{RGB}{170,55,241} 
+\lstset{language=Matlab,%
+    %basicstyle=\color{red},
+    basicstyle=\footnotesize\ttfamily,
+    breaklines=true,%
+    morekeywords={matlab2tikz},
+%    keywordstyle=\color{blue},%
+    morekeywords=[2]{1}, keywordstyle=[2]{\color{black}},
+%    identifierstyle=\color{black},%
+%    stringstyle=\color{mylilas},
+%    commentstyle=\color{mygreen},%
+    showstringspaces=false,%without this there will be a symbol in the places where there is a space
+    numbers=left,%
+    numberstyle={\tiny \color{black}},% size of the numbers
+    numbersep=9pt, % this defines how far the numbers are from the text
+    %emph=[1]{for,end,break},emphstyle=[1]\color{red}, %some words to emphasise
+    %emph=[2]{word1,word2}, emphstyle=[2]{style},    
+    frame= single,
+}
+ 
+\lstdefinestyle{nonumbers}
+{numbers=none}
+
+\usepackage{multirow}
+
+\usepackage{wrapfig}
+\usepackage{float}
+
+%=========================== PACKAGES =============================%
+
+
+\author{Gustavo Ciotto Pinton}
+
+\begin{document}
+
+\input{cover}
+%  
+% {\large 
+%     \centerline{\textbf{Exercício de Fixação de Conceitos 1}}
+%     \centerline{Gustavo Ciotto Pinton - 117136}
+%     \centerline{EA072 - Inteligência Artificial em Aplicações Industriais}
+% }
+\input{introducao} 
+
+\input{analise} 
+
+
+\input{bibliografia}
+
+    
+\end{document}
